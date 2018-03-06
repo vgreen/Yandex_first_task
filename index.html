@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+
+</head>
+<body>
+	<div class="mainwrap">
+		<div id='progress-container'>
+			<svg id="progress" width="410" height="410">
+		     <circle r="190" cx="205" cy="205" fill="none" stroke="yellow" stroke-width="20" />
+		       <circle id="pie" fill="none" r="190" cx="205" cy="205" stroke="#8A2BE2" stroke-width="20" stroke-dasharray="0 1"/> <!-- Красная обводка без смещения -->
+			</svg>
+		</div>	
+			
+		<div class="wrapper-menu">
+			<div class="wrapper-menu-elem">
+				
+				<input type="text" id="valblock" onchange="progress.setValue(this.value);">
+				
+				<div class="switch">
+					<input type="checkbox" id="switch-1" class="switch-check">
+						<label for="switch-1" class="switch-label">
+					
+							<span class="switch-slider switch-slider-on"></span>
+							<span class="switch-slider switch-slider-off"></span>
+					</label>
+				</div>
+				
+				<div class="switch">
+					<input type="checkbox" id="switch-2" class="switch-check">
+					<label for="switch-2" class="switch-label">
+						
+						<span class="switch-slider switch-slider-on"></span>
+						<span class="switch-slider switch-slider-off"></span>
+					</label>
+				</div>
+			</div>
+			<div class="wrapper-menu-labels">
+				<label>Value</label>
+				<label>Animate</label>
+				<label>Hide</label>
+			</div>
+		</div>
+	</div>
+	
+	
+</body>
+</html>
