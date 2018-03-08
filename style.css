@@ -156,17 +156,13 @@
 /* Rotation ----------------------------------------------*/			
 
 [animated = "yes"] {
-	
-	-o-transition: transform 3s linear;
-	-ms-transition: transform 3s linear;
-	-moz-transition: transform 3s linear;
-	-webkit-transition: transform 3s linear;
-	transition: transform 500s linear;
-	-o-transform: rotate(1turn);
-	-ms-transform: rotate(1turn);
-	-moz-transform: rotate(1turn);
-	-webkit-transform: rotate(1turn);
-	transform: rotate(100turn);
+	animation: rotate 3s infinite linear;
+	transform-origin: center;	
 }
 
+@keyframes rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
 /*  ---------------------------------------------Rotation-*/
