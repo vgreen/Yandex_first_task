@@ -37,11 +37,10 @@ window.onload = function () {
 	};
 	switch_hide.onchange = function(){
 		if(switch_hide.checked){
-			progress.setMod('display','none');
+			progress.setMod('hidden','yes');
 		}
 		else{
-			progress.setMod('display','');
-			switch_rotation.checked = false;
+			progress.setMod('hidden','');
 		}
 	};
 }; 
